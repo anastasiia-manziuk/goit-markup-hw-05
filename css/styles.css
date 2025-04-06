@@ -876,7 +876,7 @@ img{
     line-height: 1.17;
     letter-spacing: 0.04em;
 
-    olor: rgba(46, 47, 66, 0.4);
+    color: rgba(46, 47, 66, 0.4);
 
     background-color: transparent;
     outline: transparent;
@@ -907,7 +907,7 @@ img{
     opacity: 0;
 }
 
-.text-checkbox {
+/*.text-checkbox {
     font-size: 12px;
     font-weight: 400;
     line-height: 1.17;
@@ -917,6 +917,8 @@ img{
     align-items: center;
     
 }
+*/  
+
 
 .link-policy {
     font-size: 12px;
@@ -932,13 +934,12 @@ img{
     text-decoration: underline;
 }
 
-.text-checkbox span{
+.text-checkbox .modal-checkbox-icon{
     width: 16px;
     height: 16px;
     border-radius: 2px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     margin-right: 8px;
-    display: flex;
     align-items: center;
     justify-content: center;
     fill: transparent;
@@ -953,9 +954,7 @@ img{
     display: inline-flex;
 }
 
-.checkbox-icon{
 
-}
 
 .checkbox-form:checked + .text-checkbox span{
     background-color: #404bbf;
