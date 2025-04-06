@@ -856,13 +856,13 @@ img{
     margin-bottom: 16px;
 }
 
-.label-comment{
+/*.label-comment{
     font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.04em;
     color: #8e8f99;
-}
+}*/
 
 .textarea-form{
     border: 1px solid rgba(46, 47, 66, 0.4);
