@@ -758,17 +758,22 @@ img{
     background-color: #E7E9FC;
     cursor: pointer;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    padding: 0;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.close {
+.close-images{
     fill:#2e2f42;
     position: relative;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
     
 
 }
@@ -778,8 +783,8 @@ img{
     background-color: #404bbf;
 }
 
-.btn-close:hover .close,
-.btn-close:focus .close{
+.btn-close:hover .close-images,
+.btn-close:focus .close-images{
     fill: #fff;
 }
 
@@ -800,9 +805,11 @@ img{
 }
 
 .modal-label{
+    display: block;
     font-weight: 400;
     font-size: 12px;
-    line-height: 1.16;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     margin-bottom: 4px;
     color: #8e8f99;
 
@@ -815,6 +822,9 @@ img{
     height: 40px;
     padding-left: 38px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: transparent;
+    outline: transparent;
 }
 
 .modal-input-wrap{
@@ -833,7 +843,6 @@ img{
 .input-form:hover,
 .input-form:focus{
     border-color:#4d5ae5 ;
-    outline: none;
     box-shadow: none;
 }
 
@@ -857,12 +866,20 @@ img{
     height: 120px;
     padding: 8px 16px;
     resize: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.04em;
+
+    background-color: transparent;
+    outline: transparent;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .textarea-form:hover,
 .textarea-form:focus{
     border-color: #4d5ae5;
-    outline: none;
     box-shadow: none;
 }
 
@@ -875,6 +892,7 @@ img{
 }
 
 .checkbox-form{
+    margin-bottom: 24px;
     opacity: 0;
 }
 
@@ -885,7 +903,7 @@ img{
 .text-checkbox {
     font-size: 12px;
     font-weight: 400;
-    line-height: 1.16;
+    line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
     display: flex;
@@ -917,8 +935,10 @@ img{
     align-items: center;
     justify-content: center;
     fill: transparent;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
-    
+    display: inline-flex;
 
 }
 
@@ -941,7 +961,7 @@ img{
 .btn-form{
     border-radius: 4px;
     padding: 16px 32px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
     display: block;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
@@ -956,6 +976,8 @@ img{
     margin-top: 24px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: none;
+
+    cursor: pointer;
 }
 
 .btn-form:hover,
