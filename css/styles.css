@@ -852,7 +852,7 @@ img{
     fill: #4d5ae5;
 }
 
-.modal-field-comment{
+.modal-field.modal-field-comment{
     margin-bottom: 16px;
 }
 
